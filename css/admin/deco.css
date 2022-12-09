@@ -1,0 +1,102 @@
+/* a태그 */
+.deco{
+    display: inline-flex;
+    align-items: center;
+}
+
+.deco:hover{
+    background-color: #414141;
+    color: white;
+    transition: 1s;
+}
+.deco::before{
+    content:'';
+    /* display: inline-block; */
+    width: 16px;
+    height: 16px;
+
+    background-color: #000;
+
+    -webkit-mask-size: 16px 16px;
+}
+
+.deco:hover::before{
+    background-color: yellow;
+
+}
+
+/* deco의 자식 */
+.deco-home::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../../image/home.svg) no-repeat left center;
+    background-size: 16px 16px;
+}
+.deco-home::before:hover{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../../image/home-white.svg) no-repeat left center;
+    background-size: 16px 16px;
+}
+
+
+/* ===공지사항====== */
+.deco-note::before{
+    -webkit-mask-image: url(../../image/note.svg);
+}
+
+/* ===카테고리====== */
+.deco-category::before{
+    -webkit-mask-image: url(../../image/category.svg);
+}
+
+
+
+
+
+.join{
+    display: flex;
+    gap: 10px;
+}
+.join>ul{
+    align-items: end;
+}
+
+
+.deco-login{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+
+
+}
+.deco-login:hover{
+
+    background-color: black;
+    color: white;
+
+}
+
+.deco-login::before{
+    content:'';
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+
+    background-color: #414141;
+    -webkit-mask-image: url(../../image/person.svg);
+    -webkit-mask-size: 75px 75px;
+}
+
+/* ===deco utils============ */
+.deco-blue::before{
+    background-color: blue;
+}
+.deco-red::before{
+    background-color: red;
+}

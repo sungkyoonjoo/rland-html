@@ -1,0 +1,51 @@
+.btn{
+    padding: .4em .8em;
+    color: #fff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+
+    
+}
+
+
+.btn-default{
+    border: 1px solid #A24F17;
+    border-radius: 20px;
+    background-color: #A24F17;
+}
+
+
+.btn-default-fill{
+    background-color: #A24F17;
+
+}
+
+.btn-default-line{
+    background-color: #fff;
+    color: #000;
+    
+}
+
+.btn-cancel{
+    border: 1px solid #A24F17;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-size-1{
+    min-width: 80px;
+}
+
+@media (min-width: 768px) {
+    .btn-default-md{ 
+        border-radius: 0px;
+        font-size: 17px;
+    }
+
+
+
+}
