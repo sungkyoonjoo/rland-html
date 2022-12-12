@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-    console.log("hello");
+    console.log("안녕하세요");
 
 
 })
